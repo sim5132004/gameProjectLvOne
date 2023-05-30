@@ -1,10 +1,7 @@
 package GGgame.firstGame.login;
 
 
-import hello.login.domain.login.LoginService;
-import hello.login.domain.member.Member;
-import hello.login.web.member.MemberController;
-import hello.login.web.member.SessionConst;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;

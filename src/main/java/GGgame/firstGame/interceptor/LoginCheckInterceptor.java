@@ -1,6 +1,6 @@
 package GGgame.firstGame.interceptor;
 
-import hello.login.web.member.SessionConst;
+//import hello.login.web.member.SessionConst;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.HandlerInterceptor;
 
