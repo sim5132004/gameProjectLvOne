@@ -1,6 +1,6 @@
-package GGgame.firstGame.charaters;
+package GGgame.firstGame.characters;
 
-abstract public class Charaters {
+abstract public class Characters {
     //기본 부모 캐릭터
 
     private int hp;

@@ -1,12 +1,13 @@
-package GGgame.firstGame.interceptor;
+package GGgame.firstGame.login.interceptor;
 
-//import hello.login.web.member.SessionConst;
+
+import GGgame.firstGame.login.member.SessionConst;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 @Slf4j
 public class LoginCheckInterceptor implements HandlerInterceptor {

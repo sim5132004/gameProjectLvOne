@@ -1,9 +1,9 @@
-package GGgame.firstGame.login;
+package GGgame.firstGame.login.controller;
 
 
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
 
 @Data
 public class LoginForm {
