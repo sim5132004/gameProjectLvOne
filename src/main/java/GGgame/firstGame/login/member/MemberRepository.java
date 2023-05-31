@@ -1,7 +1,6 @@
 package GGgame.firstGame.login.member;
 
 import org.springframework.stereotype.Repository;
-
 import java.util.*;
 
 @Repository

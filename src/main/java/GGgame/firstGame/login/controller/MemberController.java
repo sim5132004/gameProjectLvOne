@@ -32,8 +32,8 @@ public class MemberController {
 
     @PostConstruct
     public void init(){
-        memberRepository.save(new Member("test","1111","김씨"));
-        memberRepository.save(new Member("test2","1111","이씨"));
+        memberRepository.save(new Member("test","1111","테스터1"));
+        memberRepository.save(new Member("test2","1111","테스터2"));
 
     }
 }
