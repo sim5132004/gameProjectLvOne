@@ -86,6 +86,7 @@ public class Main {
                     }
                     System.out.println(monster.name + "의 공격");
                     hero.attacked(monster.attack());
+                    System.out.println(hero.name+"의 남은 체력은 "+hero.hp+"입니다.");
 
                     if (hero.hp <= 0) {
                         System.out.println(hero + "가 죽었습니다");

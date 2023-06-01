@@ -29,6 +29,7 @@ public class SwordsMan extends Hero {
         public void attacked(int sum){
             if(sp>= sum){
                 hp= hp-0;
+                System.out.println("높은 방어력으로 인해 공격 무효화");
             }else{
                 hp= hp+ sp- sum;
             }
