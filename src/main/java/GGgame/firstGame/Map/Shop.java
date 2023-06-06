@@ -1,27 +1,57 @@
 package GGgame.firstGame.Map;
 
+import GGgame.firstGame.Item.Armor;
+import GGgame.firstGame.Item.HpPotion;
+import GGgame.firstGame.Item.MpPotion;
+import GGgame.firstGame.Item.Weapon;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Shop extends Map{
+public class Shop {
     //포션2개만 있는데 나중에 더 추가가능
-    int hpPotion=20;
-    int spPotion=30;
 
-    public int VisitShop(int money, int number){
-        name="상점";
-        System.out.println(name+"에 방문하였습니다");
+    public ArrayList<Weapon>weapons;
+    public ArrayList<Armor>armors;
+    public ArrayList<HpPotion>hpPotions;
+    public ArrayList<MpPotion>mpPotions;
 
-        if(number==1){
-            if(money>=hpPotion){
-                return money-hpPotion;
-            }
-        }
-        if (number == 2) {
-            if(money>=spPotion){
-                return money-spPotion;
-            }
-        }
-        //돈부족하면
-        return -1;
+    public Shop(ArrayList<Weapon> weapons, ArrayList<Armor> armors, ArrayList<HpPotion> hpPotions, ArrayList<MpPotion> mpPotions) {
+        this.weapons = weapons;
+        this.armors = armors;
+        this.hpPotions = hpPotions;
+        this.mpPotions = mpPotions;
+    }
+
+    public ArrayList<Weapon> getWeapons() {
+        return weapons;
+    }
+
+    public void setWeapons(ArrayList<Weapon> weapons) {
+        this.weapons = weapons;
+    }
+
+    public ArrayList<Armor> getArmors() {
+        return armors;
+    }
+
+    public void setArmors(ArrayList<Armor> armors) {
+        this.armors = armors;
+    }
+
+    public ArrayList<HpPotion> getHpPotions() {
+        return hpPotions;
+    }
+
+    public void setHpPotions(ArrayList<HpPotion> hpPotions) {
+        this.hpPotions = hpPotions;
+    }
+
+    public ArrayList<MpPotion> getMpPotions() {
+        return mpPotions;
+    }
+
+    public void setMpPotions(ArrayList<MpPotion> mpPotions) {
+        this.mpPotions = mpPotions;
     }
 }
